@@ -1,0 +1,1 @@
+Create a functioning calculator using jQuery

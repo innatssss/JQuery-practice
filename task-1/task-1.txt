@@ -1,0 +1,1 @@
+Create a rectangle and make it move to all edges of the page after a button has been clicked
