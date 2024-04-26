@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  #rectangle {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #moveBtn {
+    width: 40%;
+    height: 50px;
+    background-color: #32a852;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+      transition-duration: 2000ms;
+      background-color: #b2edc2;
+    }
+  }
+}
