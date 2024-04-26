@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  height: 10rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #826c94 30%, #ffab44);
+  background-size: 100vw 100vh;
+}
+
+.calculator {
+  position: relative;
+  border-radius: 12px;
+  margin-top: 100px;
+  max-width: 480px;
+  background: rgb(227, 222, 217, 0.7);
+  box-shadow: 0 0 75px 30px rgba(#cdcdcd, 0.7);
+}
+
+/* Display */
+.calculator__display {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 0pc 32px;
+}
+
+.calculator__main-display {
+  font-size: 2.3rem;
+  text-align: right;
+  background: #cdcdcd;
+  color: #000;
+  outline: none;
+  border: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+input[type="text"] {
+  font-family: "Kode Mono", monospace;
+}
+
+/* Help buttons */
+.op-1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.operator__btn {
+  font-size: 2rem;
+  color: #f2f4f3;
+  background-color: #4c4c4c;
+  border: 4px solid #000;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.operator__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition-duration: 0.7s;
+  color: #eab071;
+}
+
+/* main section with buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 32px;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 2rem;
+  background-color: #eee;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to bottom, #eee 40%, #f7ca92);
+}
+
+.btn-operator {
+  background-color: #eab071;
+}
+.btn-large {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
